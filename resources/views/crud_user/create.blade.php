@@ -71,8 +71,8 @@
                                         <div class="col-md-8" style="text-align: left;">
                                             <input type="age" id="age" style="border: solid 1px; width: 215px;"
                                                 name="age" required>
-                                            @if ($errors->has('like'))
-                                            <span class="text-danger">{{ $errors->first('like') }}</span>
+                                            @if ($errors->has('age'))
+                                            <span class="text-danger">{{ $errors->first('age') }}</span>
                                             @endif
                                         </div>
                                     </div>
@@ -85,8 +85,8 @@
                                         <div class="col-md-8" style="text-align: left;">
                                             <input type="text" id="facebook" style="border: solid 1px; width: 215px;"
                                                 name="facebook" required>
-                                            @if ($errors->has('github'))
-                                            <span class="text-danger">{{ $errors->first('github') }}</span>
+                                            @if ($errors->has('facebook'))
+                                            <span class="text-danger">{{ $errors->first('facebook') }}</span>
                                             @endif
                                         </div>
                                     </div>

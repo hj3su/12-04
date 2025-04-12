@@ -63,6 +63,8 @@ class CrudUserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
+            'age' => 'required',
+            'facebook' => 'required',
            
 
         ]);
@@ -72,7 +74,10 @@ class CrudUserController extends Controller
         $check = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'age' => $data['age'],
+            'facebook' => $data['facebook'],
             'password' => Hash::make($data['password']),
+            
           
         ]);
 
@@ -159,6 +164,8 @@ class CrudUserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,id,' . $input['id'],
             'password' => 'required|min:6',
+            'age' => 'required',
+            'facebook' => 'required',
             
         ]);
 
@@ -168,6 +175,8 @@ class CrudUserController extends Controller
         $user->name = $input['name'];
         $user->email = $input['email'];
         $user->password = $input['password'];
+        $user->age = $input['age'];
+        $user->facebook = $input['facebook'];
        
 
         $user->update();

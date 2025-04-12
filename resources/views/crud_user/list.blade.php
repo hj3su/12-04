@@ -18,7 +18,8 @@
                             <th>#</th>
                             <th>Username</th>
                             <th>Email</th>
-                           
+                            <th>Age</th>
+                            <th>Facebook</th>
                             <th>Thao tác</th>
                         </tr>
                     </thead>
@@ -28,7 +29,8 @@
                                 <th style="text-align: center;">{{ $user->id }}</th>
                                 <th>{{ $user->name }}</th>
                                 <th>{{ $user->email }}</th>
-                    
+                                <th>{{ $user->age }}</th>
+                                <th>{{ $user->facebook }}</th>
                                 <!-- <th><img src="{{ asset('avatar/'.$user->avatar)  }}" width="70px" height="70px" alt="avatar"></th> -->
                                 <th>
                                     

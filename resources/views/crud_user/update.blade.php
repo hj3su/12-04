@@ -19,9 +19,9 @@
                                 <div class="col-md-4" style="text-align: center">
                                         <p style="margin-top:20px">User name</p>
                                         <p style="margin-top:35px">Email</p>
-                                        <p style="margin-top:28px">Nhập lại mặt khẩu</p>
-                                        <!-- <p style="margin-top:28px">Like</p>
-                                        <p style="margin-top:28px">Github</p> -->
+                                        <p style="margin-top:28px">Nhập lại mat khẩu</p>
+                                        <p style="margin-top:28px">Age</p>
+                                        <p style="margin-top:28px">Facebook</p>
                                     </div>
                                 <div class="col-md-8">
                                 <div class="form-group mb-3">
@@ -48,21 +48,21 @@
                                     @endif
                                 </div>
 
-                                <!-- <div class="form-group mb-3">
-                                    <input type="text" style="border: solid 1px; width: 250px; margin-top:15px;" placeholder="Like" id="like" class="form-control"
-                                           name="like" required>
-                                    @if ($errors->has('like'))
-                                        <span class="text-danger">{{ $errors->first('like') }}</span>
+                                <div class="form-group mb-3">
+                                    <input type="text" style="border: solid 1px; width: 250px; margin-top:15px;" placeholder="Age" id="age" class="form-control"
+                                           name="age" required>
+                                    @if ($errors->has('age'))
+                                        <span class="text-danger">{{ $errors->first('age') }}</span>
                                     @endif
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <input type="text" style="border: solid 1px; width: 250px; margin-top:15px;" placeholder="Github" id="github" class="form-control"
-                                           name="github" required>
-                                    @if ($errors->has('github'))
-                                        <span class="text-danger">{{ $errors->first('github') }}</span>
+                                    <input type="text" style="border: solid 1px; width: 250px; margin-top:15px;" placeholder="Facebook" id="facebook" class="form-control"
+                                           name="facebook" required>
+                                    @if ($errors->has('facebook'))
+                                        <span class="text-danger">{{ $errors->first('facebook') }}</span>
                                     @endif
-                                </div> -->
+                                </div>
 
                                   <!-- Hinh anh -->
                                 <!-- <div class="row mb-3">
@@ -76,15 +76,13 @@
                                             <strong>{{ $message }}</strong>
                                         </span>
                                         @enderror
-                                    </div> -->
+                                    </div>
+                                </div> -->
 
-                                   
-                                </div>
-
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-8" style="text-align: right; margin-top: 6px; margin-left:">
                                         <a href="http://127.0.0.1:8000/login" style="text-align: right; text-decoration: none; font-size: 13px;">Đã có tài khoản</a>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-4">
                                     <div class="" style="text-align: right; margin-right: 50px">
                                     <button type="submit" class="btn btn-primary btn-block">Cập Nhật</button>
@@ -94,9 +92,9 @@
                             </form> 
                             
                         </div>
-                        <!-- <div class="d-grid mx-auto">
+                         <div class="d-grid mx-auto">
                             <a href="{{route('user.list')}}" class="btn btn-dark btn-block">Back</a>
-                      </div> -->
+                      </div>
                     </div>
                 </div>
             </div>
