@@ -65,32 +65,32 @@
                                 </div>
 
                                  <!-- Mật khẩu -->
-                                 <!-- <div class="form-group mb-2">
+                                 <div class="form-group mb-2">
                                     <div class="row text-center">
-                                        <div class="col-md-4" style="">Like</div>
+                                        <div class="col-md-4" style="">Age</div>
                                         <div class="col-md-8" style="text-align: left;">
-                                            <input type="like" id="like" style="border: solid 1px; width: 215px;"
-                                                name="like" required>
+                                            <input type="age" id="age" style="border: solid 1px; width: 215px;"
+                                                name="age" required>
                                             @if ($errors->has('like'))
                                             <span class="text-danger">{{ $errors->first('like') }}</span>
                                             @endif
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                  <!-- Mật khẩu -->
-                                 <!-- <div class="form-group mb-2">
+                                 <div class="form-group mb-2">
                                     <div class="row text-center">
-                                        <div class="col-md-4" style="">github</div>
+                                        <div class="col-md-4" style="">Facebook</div>
                                         <div class="col-md-8" style="text-align: left;">
-                                            <input type="text" id="github" style="border: solid 1px; width: 215px;"
-                                                name="github" required>
+                                            <input type="text" id="facebook" style="border: solid 1px; width: 215px;"
+                                                name="facebook" required>
                                             @if ($errors->has('github'))
                                             <span class="text-danger">{{ $errors->first('github') }}</span>
                                             @endif
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 <!-- 
                                   Hinh anh
                                   <div class="row mb-3">

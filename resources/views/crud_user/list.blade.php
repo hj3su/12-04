@@ -31,7 +31,7 @@
                     
                                 <!-- <th><img src="{{ asset('avatar/'.$user->avatar)  }}" width="70px" height="70px" alt="avatar"></th> -->
                                 <th>
-                                    <!-- <a href="{{ route('user.profile', ['id' => $user->id]) }}" >Profile</a> | -->
+                                    
                                     <a href="{{ route('user.readUser', ['id' => $user->id]) }}"   >View</a> |
                                     <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" >Edit</a> |
                                     <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" >Delete</a>
