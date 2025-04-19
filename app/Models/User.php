@@ -71,8 +71,8 @@ class User extends Authenticatable
      * Relationship many to many
      * @return HasMany
      */
-    public function favorities(): BelongsToMany
+    public function roles(): BelongsToMany
     {
-        return $this->belongsToMany(Favorities::class, 'user_favorite', 'user_id', 'favorite_id');
+        return $this->belongsToMany(Role::class, 'user_role');
     }
 }

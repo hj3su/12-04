@@ -3,6 +3,7 @@
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrudUserController;
+use App\Http\Controllers\RoleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,8 @@ Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
 
 
 Route::get('danh-sach-so-thich', [FavoriteController::class, 'list'])->name('favorite.list');
+
+Route::get('role', [RoleController::class, 'role'])->name('user.role');
 
 Route::get('/', function () {
     return view('welcome');

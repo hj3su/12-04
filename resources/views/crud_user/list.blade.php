@@ -15,11 +15,11 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>ID</th>
                             <th>Username</th>
                             <th>Email</th>
-                           
-                            <th>Thao tác</th>
+                            <th>Roles</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,9 +29,15 @@
                                 <th>{{ $user->name }}</th>
                                 <th>{{ $user->email }}</th>
                     
-                                <!-- <th><img src="{{ asset('avatar/'.$user->avatar)  }}" width="70px" height="70px" alt="avatar"></th> -->
                                 <th>
-                                    <!-- <a href="{{ route('user.profile', ['id' => $user->id]) }}" >Profile</a> | -->
+                                    @foreach($user->roles as $role)
+                                        <a href="{{ route('user.role', ['id' => $role->id]) }}">
+                                            {{ $role->name . '-' }}
+                                        </a>
+                                    @endforeach
+                                </th>
+                                <th>
+                                    
                                     <a href="{{ route('user.readUser', ['id' => $user->id]) }}"   >View</a> |
                                     <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" >Edit</a> |
                                     <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" >Delete</a>
@@ -41,7 +47,8 @@
                     </tbody>
                 </table>
             </div>
-            <div style="text-align: center;" class="link">{{ $users->links() }}</div>
+            <!-- <div style="text-align: center;" class="link">{{ $users->links() }}</div> -->
+            {!! $users->withQueryString()->links('pagination::bootstrap-5') !!}
         </div>
     </main>
 @endsection
